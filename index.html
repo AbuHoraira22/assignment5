@@ -8,26 +8,27 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="px-20">
-    <nav class="flex flex-row justify-between lg:sticky top-0 z-10 opacity-90 lg:backdrop-blur-sm bg-yellow-50">
-      <button class="bg-lime-500 w-20 h-12 rounded text-black font-semibold"><a href="./blog.html">Blog</a> </button>
-      <div class="content-center flex items-center">
+<body class="px-16 pt-2 bg-sky-100">
+    <nav class="flex flex-row justify-between lg:sticky top-0 z-10 opacity-95 lg:backdrop-blur-sm bg-orange-100">
+      <button class="bg-lime-500 w-16 lg:w-20 h-12 rounded text-black font-semibold text-m hover:bg-lime-300"><a href="./blog.html">Blog</a></button>
+      <div class="content-center flex items-center ">
         <img src="./assets/logo.png" alt="Logo">&nbsp;
-        <p>Donate Bangladesh</p>
+        <p class="font-bold lg:text-2xl"><button><a href="./index.html">Donate Bangladesh</a></button></p>
       </div>
       <div class="flex items-center">
         <img src="./assets/coin.png" alt="Coin">&nbsp;
-        <span id="pocketbalance">5550</span>&nbsp; 
-        <p>TK.</p>
+        <div class="flex flex-col lg:flex-row items-center"><span id="pocketbalance" class="font-bold">5550</span> 
+          <img class="w-6 h-6" src="./assets/taka.png" alt="taka"></div>
+        
       </div>
 
     </nav>
 
     <!-- donation-history -->
-    <section class=" py-6 justify-center flex sticky opacity-80 lg:sticky lg:top-16 lg:backdrop-blur-sm">
+    <section class=" py-6 justify-center flex sticky opacity-95 lg:sticky lg:top-16 lg:backdrop-blur-sm">
       <div>
-      <button id="donation" class="bg-lime-500 w-24 h-12 rounded text-black font-semibold">Donation</button>
-      <button id="history" class="bg-slate-400 w-24 h-12 rounded text-black font-semibold">History</button>
+      <button id="donation" class="bg-lime-500 w-24 h-12 rounded text-black font-semibold hover:bg-lime-300">Donation</button>
+      <button id="history" class="bg-slate-400 w-24 h-12 rounded text-black font-semibold hover:bg-slate-300">History</button>
     </div>
     
 
@@ -52,17 +53,17 @@
 
 
             <!-- sub1 -->
-          <div id="storedMoney" class="flex">
+          <div id="storedMoney" class="flex bg-lime-100 w-36 ">
             <img src="./assets/coin.png" alt="Coin">&nbsp;
-            <span>2758620</span>&nbsp;
-            <p>Tk.</p></div>
+            <span>258620</span>&nbsp;
+            <p>BDT</p></div>
             <!-- sub2 -->
             <div class="flex-col">
               <h1 class="font-bold text-xl my-2">Donate For Noakhali </h1>
               <p class="my-2"> The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
 
               <input type="text" name="amount" id="amount1" placeholder=" Write Your Amount "class="h-12 rounded-xl w-full lg:mt-24 bg-grey-400 opacity-75 "><br>
-      <button id="donateNow1" class="bg-lime-400 text-black w-full h-12 rounded-xl my-4 ">Donate Now<button>
+      <button id="donateNow1" class="bg-lime-400 text-black w-full h-12 rounded-xl my-4 hover:bg-lime-300 ">Donate Now<button>
 
             </div>
         </div>
@@ -84,17 +85,17 @@
   
   
               <!-- sub1 -->
-            <div id="storedMoney" class="flex">
+            <div id="storedMoney" class="flex bg-lime-100 w-36 rounded">
               <img src="./assets/coin.png" alt="Coin">&nbsp;
-              <span>2758620</span>&nbsp;
-              <p>Tk.</p></div>
+              <span>308620</span>&nbsp;
+              <p>BDT</p></div>
               <!-- sub2 -->
               <div class="flex-col">
                 <h1 class="font-bold text-xl my-2">Donate For Feni </h1>
                 <p class="my-2"> The recent floods in Feni have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
   
                 <input type="text" name="amount4" id="amount2" placeholder=" Write Your Amount "class="h-12 rounded-xl w-full lg:mt-36 bg-grey-400 opacity-75 "><br>
-        <button id="donateNow2" class="bg-lime-400 text-black w-full h-12 rounded-xl mt-4 ">Donate Now<button>
+        <button id="donateNow2" class="bg-lime-400 text-black w-full h-12 rounded-xl mt-4 hover:bg-lime-300 ">Donate Now<button>
   
               </div>
           </div>
@@ -115,17 +116,17 @@
           
           
                       <!-- sub1 -->
-                    <div id="storedMoney" class="flex">
+                    <div id="storedMoney" class="flex bg-lime-100 w-36 rounded">
                       <img src="./assets/coin.png" alt="Coin">&nbsp;
-                      <span>2758620</span>&nbsp;
-                      <p>Tk.</p></div>
+                      <span>158620</span>&nbsp;
+                      <p>BDT</p></div>
                       <!-- sub2 -->
                       <div class="flex-col">
                         <h1 class="font-bold text-xl my-2">Donate For Quota-Protestors </h1>
                         <p class="my-2"> The recent attack against quota-protestors have caused significant damage to lives. Your donation will help provide essential supplies and  to those affected by this genocide. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
           
                         <input type="text" name="amount5" id="amount3" placeholder=" Write Your Amount "class="h-12 rounded-xl w-full lg:mt-44 bg-grey-400 opacity-75 "><br>
-                <button id="donateNow3" class="bg-lime-400 text-black w-full h-12 rounded-xl my-4 ">Donate Now<button>
+                <button id="donateNow3" class="bg-lime-400 text-black w-full h-12 rounded-xl my-4 hover:bg-lime-300 ">Donate Now<button>
           
                       </div>
                   </div>
