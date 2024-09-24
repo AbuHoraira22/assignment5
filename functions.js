@@ -4,6 +4,13 @@ const noaFund = document.getElementById("noaFund");
 const amountOne = document.getElementById("amountone");
 const donateNow1 = document.getElementById("donateNow1");
 
+const modal = document.getElementById("my_modal_1");
+const donatedmoney = document.getElementById("donatedmoney");
+
+const hiddenSection = document.getElementById("hiddenSection");
+const addedAmount = document.getElementById("addedAmount");
+const addedTime = document.getElementById("addedTime");
+
 
 donateNow1.addEventListener("click",function(){
     
@@ -14,14 +21,19 @@ donateNow1.addEventListener("click",function(){
         alert("Please enter a valid positive amount.");
         return;
     }
-
     
     const currentPocketBalance = parseInt(pocketBalance.innerText);
+
     if (amount > currentPocketBalance) {
-        alert("Sorry,You don't have sufficient money");
+        alert("Sorry,You don't have sufficient balance");
         return;
     }
 
+    if (amount <= currentPocketBalance) {
+      donatedmoney.innerText = amount;
+       modal.showModal();
+    
+    }
     
     const newPocketBalance = currentPocketBalance - amount;
     const newNoaFund = parseInt(noaFund.innerText) + amount;
@@ -32,6 +44,8 @@ donateNow1.addEventListener("click",function(){
 
    
     amountOne.value = "";
+    addedAmount.textContent = amount;
+    addedTime.textContent = new Date().toLocaleString();
 });
 
 // 2nd card//
@@ -58,7 +72,11 @@ donatetwo.addEventListener("click",function(){
         return;
     }
 
-    
+    if (amount <= currentPocketBalance) {
+        donatedmoney.innerText = amount;
+        modal.showModal();
+        
+    }
     const newPocketBalance = currentPocketBalance - amount;
     const newfeniFund = parseInt(fenifund.innerText) + amount;
 
@@ -68,6 +86,8 @@ donatetwo.addEventListener("click",function(){
 
    
     amount2.value = "";
+    addedAmount.textContent = amount;
+    addedTime.textContent = new Date().toLocaleString();
 });
 
 // 3rd card//
@@ -86,18 +106,21 @@ donatethree.addEventListener("click",function(){
         alert("Please enter a valid positive amount.");
         return;
     }
-    else{
-        
-    }
+    
 
     
     const currentPocketBalance = parseInt(pocketBalance.innerText);
+
     if (amount > currentPocketBalance) {
         alert("Sorry,You don't have sufficient money");
         
         return;
     }
-
+    if (amount <= currentPocketBalance) {
+        donatedmoney.innerText = amount;
+        modal.showModal();
+    }
+    
     
     const newPocketBalance = currentPocketBalance - amount;
     const newquotaFund = parseInt(quotaFund.innerText) + amount;
@@ -108,13 +131,16 @@ donatethree.addEventListener("click",function(){
 
    
     amount3.value = "";
+    addedAmount.textContent = amount;
+    addedTime.textContent = new Date().toLocaleString();
 });
 
 // history button's hide ability//
 const historybtn = document.getElementById("history");
 const donationbtn = document.getElementById("donation");
 const cards = document.getElementById("cards");
-const historyone = document.getElementById("historyone")
+const historyone = document.getElementById("hiddenSection");
+const donationhistory = document.getElementById("donationhistory");
 
 
 
@@ -122,6 +148,8 @@ historybtn.addEventListener("click",function(){
 
    cards.classList.add("hidden");
    historyone.classList.remove("hidden");
+
+   donationhistory.innerText = amount;
 
 })
 
