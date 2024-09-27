@@ -86,8 +86,8 @@ donatetwo.addEventListener("click",function(){
 
    
     amount2.value = "";
-    addedAmount.textContent = amount;
-    addedTime.textContent = new Date().toLocaleString();
+    addedAmountone.textContent = amount;
+    addedTimeone.textContent = new Date().toLocaleString();
 });
 
 // 3rd card//
@@ -131,8 +131,8 @@ donatethree.addEventListener("click",function(){
 
    
     amount3.value = "";
-    addedAmount.textContent = amount;
-    addedTime.textContent = new Date().toLocaleString();
+    addedAmounttwo.textContent = amount;
+    addedTimetwo.textContent = new Date().toLocaleString();
 });
 
 // history button's hide ability//
